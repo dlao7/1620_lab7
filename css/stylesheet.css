@@ -3,7 +3,7 @@ body {
 }
 
 header, footer{
-    background-color: #F1DFE8;
+    background-color: #E3E2F3;
     text-align: center;
 }
 
@@ -22,7 +22,7 @@ nav{
 .wrap{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    column-gap: 30px;
+    column-gap: 20px;
 }
 
 .wrap img{
