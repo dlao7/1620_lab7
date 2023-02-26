@@ -2,16 +2,20 @@ body {
     background-color: #FEE7C8;
 }
 
-h1 {
-    color:#124E68;
-}
-
-.nav_menu{
+header{
     background-color: #F1DFE8;
     text-align: center;
 }
 
-.h1_index{
+header h1{
     font-family:Montserrat, sans-serif;
+    color:#124E68;
 }
     
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
