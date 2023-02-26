@@ -2,7 +2,7 @@ body {
     background-color: #FEE7C8;
 }
 
-header{
+header, footer{
     background-color: #F1DFE8;
     text-align: center;
 }
@@ -17,5 +17,15 @@ nav{
     flex-flow: row wrap;
     justify-content: center;
     gap: 10px;
+}
+
+.wrap{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
+}
+
+img{
+    padding-right: 40px;
 }
 
