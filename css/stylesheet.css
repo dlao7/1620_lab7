@@ -14,22 +14,44 @@ header h1{
     
 nav{
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
+    padding-bottom: 10px;
 }
 
+/* for index page */
 .wrap{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 20px;
+    grid-template-columns: 4fr 1fr;
+    column-gap: 20 px;
 }
 
-.wrap img{
-    padding-right: 20px;
+/* Affects courses page only, because the regular format looks too big*/
+section h2{
+    font-size: medium;
+    font-style: normal;
 }
 
-article{
-    padding-top:10px;
-}
+@media screen and (min-width: 600px){
+    /* Navigation bar central axis change*/
+    nav{
+        flex-direction: row;
+    }
+    
+    /* changes courses layout to grid */
+    section{
+        display:grid;
+        grid-template-columns: 1fr 4fr;
+        column-gap: 10 px;
+    }
+    
+    section > p:first-child{
+        order: 3
+    } 
 
+    section > p:nth-child(2){
+        order: 2
+    } 
+
+}
