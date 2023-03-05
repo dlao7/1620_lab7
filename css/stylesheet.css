@@ -24,13 +24,16 @@ nav{
 .wrap{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    column-gap: 20 px;
+    column-gap: 10 px;
 }
 
-/* Affects courses page only, because the regular format looks too big*/
-section h2{
-    font-size: medium;
-    font-style: normal;
+ul.line {
+    border-bottom: lightgray groove 2px;
+}
+
+li {
+    list-style-type: none; 
+    padding: 20px 0px; 
 }
 
 @media screen and (min-width: 600px){
@@ -40,18 +43,24 @@ section h2{
     }
     
     /* changes courses layout to grid */
-    section{
+    ul{
         display:grid;
         grid-template-columns: 1fr 4fr;
-        column-gap: 10 px;
+        gap: 20 px;
     }
-    
-    section > p:first-child{
-        order: 3
+
+    ul > li:first-child{
+        margin-left:-2em;
+        padding-bottom:40px;
+    }
+
+    ul > li:nth-child(2){
+        margin-left:-2em;
+        order: 3;
     } 
 
-    section > p:nth-child(2){
-        order: 2
+    ul > li:last-child{
+        order: 2;
     } 
 
 }
