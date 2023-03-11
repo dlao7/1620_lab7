@@ -11,3 +11,9 @@ const courseList = [{
     name : "Business Communications 1"
 }
 ]
+
+let user_input = 0;
+
+do {
+    user_input = prompt(`Enter a four digit number: `)
+} while (isNaN(user_input) || user_input.length != 4);
