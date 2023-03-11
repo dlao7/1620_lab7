@@ -28,10 +28,10 @@ for (let course of courseList){
 }
 
 if (included != true){
-courseList.push({
-    code : user_input,
-    name : null
-})
-console.log(`Added new course ${user_input} to the course list.`)
+    courseList.push({
+        code : user_input,
+        name : null
+    })
+    console.log(`Added new course ${user_input} to the course list.`)
 }
     
