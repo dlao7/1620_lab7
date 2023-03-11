@@ -17,3 +17,21 @@ let user_input = 0;
 do {
     user_input = prompt(`Enter a four digit number: `)
 } while (isNaN(user_input) || user_input.length != 4);
+
+let included = false
+
+for (let course of courseList){
+    if (course['code'].includes(user_input)){
+        console.log(`Yes, I am taking the course: ${course.code} - ${course.name}`)
+        included = true
+    }
+}
+
+if (included != true){
+courseList.push({
+    code : user_input,
+    name : null
+})
+console.log(`Added new course ${user_input} to the course list.`)
+}
+    
